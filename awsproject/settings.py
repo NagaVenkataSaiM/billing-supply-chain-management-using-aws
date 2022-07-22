@@ -93,8 +93,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mydb',
         'USER': 'root',
-        'PASSWORD': 'Nvsai222',
-        'HOST': 'myawsdb.cjkpxuwvhvtd.us-east-1.rds.amazonaws.com',
+        'PASSWORD': '',
+        'HOST': 'us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -143,8 +143,8 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DYNAMODB_SESSIONS_AWS_ACCESS_KEY_ID = 'AKIARJ5FEPWAZREADHPO'
-DYNAMODB_SESSIONS_AWS_SECRET_ACCESS_KEY = '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'
+DYNAMODB_SESSIONS_AWS_ACCESS_KEY_ID = ''
+DYNAMODB_SESSIONS_AWS_SECRET_ACCESS_KEY = ''
 
 SESSION_ENGINE = 'dynamodb_sessions.backends.dynamodb'
 AWS_STORAGE_BUCKET_NAME ='mybucket558'

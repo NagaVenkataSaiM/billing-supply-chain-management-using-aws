@@ -10,7 +10,7 @@
 		<h3>Note: File name should be not more than 30 characters.</h3>
 		<br>
 		<iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
-		<form  method="POST" action="/accounts/" target="dummyframe" enctype="multipart/form-data">
+		<form  method="POST" action="/accounts/" target="_blank" enctype="multipart/form-data">
 			{% csrf_token %}
 			<input type="hidden" name="username" value="{{request.session.username}}">
 			<label>Title:</label>
@@ -21,7 +21,7 @@
 			<input type="file" name="document">
 			<br>
 			<br>
-			<input onclick="window.location.href = '/'" type="submit" name="submit">
+			<input  type="submit" name="submit">
 		</form>
 		<br>
 		<a href="/generatebill/">Generate pay Slip</a>
