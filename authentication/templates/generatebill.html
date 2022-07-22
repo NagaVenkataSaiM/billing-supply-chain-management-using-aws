@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<center>
+		<h1>PLease Enter your details.</h1>
+		<br>
+		<h3>Note: File name should be not more than 30 characters.</h3>
+		<br>
+		<form method="post">
+			{% csrf_token %}
+			<label>Filename:</label>
+			<input type="text" name="filename">
+			<br>
+			<br>
+			<label>Customer Name:</label>
+			<input type="text" name="customername">
+			<br>
+			<br>
+			<label>Company Name:</label>
+			<input type="text" name="companyname">
+			<br>
+			<br>
+			<label>Bill Amount:</label>
+			<input type="number" name="billamount">
+			<br>
+			<br>
+			<input type="submit" name="submit">
+		</form>
+		<br>
+		<a href="/">Home</a>
+	</center>
+</body>
+</html>

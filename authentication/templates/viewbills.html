@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>View Bills</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <body>
+      <div>
+    {% for bill in event_d %}
+    <label>{{bill.title}}</label>
+    <p>Click below link to view</p>
+    <a href="{{bill.document.url}}">View Bill</a>
+    <br>
+    <br>
+     {% endfor %}
+  </div>
+
+  <br>
+  <a href="/">Home</a>
+</body>
+   </head>
+    </html>
